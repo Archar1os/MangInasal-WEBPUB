@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Order - Mang Inasal</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <header class="order-header">
+      <h1>Your Order Summary</h1>
+      <p>Review your items before placing your order.</p>
+    </header>
+
+    <main class="order-container">
+      <div id="order-items" class="order-items"></div>
+
+      <div class="order-summary">
+        <p id="order-total" class="order-total">Total: ₱0.00</p>
+        <div class="order-actions">
+          <button id="place-order">Place Order</button>
+          <button id="clear-cart">Clear Cart</button>
+        </div>
+        <div class="back-button">
+          <a href="product.html" class="back-link">← Back to Menu</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/order.js"></script>
+    <script>
+      // Animation on navbar
+      document.body.classList.add("fade-out");
+
+      window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("fade-out");
+      });
+
+      document.querySelectorAll("a[href]").forEach((link) => {
+        const isInternal = link.hostname === window.location.hostname;
+        const isAnchor = link.href.includes("#");
+
+        if (isInternal && !isAnchor) {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+              window.location.href = link.href;
+            }, 250);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

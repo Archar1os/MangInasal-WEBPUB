@@ -1,0 +1,136 @@
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.order-header {
+  background-color: #006400;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #ffd700;
+}
+
+.order-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.order-header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fff5;
+  border: 2px solid #006400;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 100, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 100, 0, 0.15);
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #006400;
+}
+
+.item-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #228b22;
+}
+
+.order-summary {
+  width: 40%;
+  text-align: center;
+  background-color: #fffef5;
+  padding: 1.5rem;
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 100, 0, 0.1);
+}
+
+.order-total {
+  font-size: 30px;
+  font-weight: bold;
+  color: #006400;
+  margin-bottom: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.order-actions button {
+  background-color: #ffd700;
+  color: #006400;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-actions button:hover {
+  background-color: #ffcc00;
+}
+
+/* Empty Cart Message */
+.empty-cart-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  background-color: #fff8e1;
+  padding: 2rem;
+  border: 2px dashed #ffd700;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 100, 0, 0.05);
+  font-style: italic;
+}
+
+/* Back Button Styling */
+.back-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #006400;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #ffcc00;
+}

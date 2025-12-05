@@ -1,0 +1,252 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f8fff5;
+  color: #333;
+  line-height: 1.6;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #006400, #228b22);
+  padding: 1rem 2rem;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-link {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link a:hover,
+.nav-link a.active {
+  background-color: #ffd700;
+  color: #006400;
+}
+
+/* Cart Button (SVG Link) — refined spacing */
+.cart-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.cart-link:hover {
+  background-color: #ffd700;
+  color: #006400;
+}
+
+/* SVG Icon Size */
+.cart-link svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+/* Cart Count Badge */
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #ffd700;
+  color: black;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Dropdown */
+.cart-dropdown {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 250px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cart-dropdown.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: white;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* Data Section */
+.data-section {
+  padding: 3rem 5%;
+  min-height: 80vh;
+  background-color: #e6ffe6;
+}
+
+.data-section h2 {
+  text-align: center;
+  color: #006400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar-container input {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #228b22;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar-container input:focus {
+  border-color: #ffd700;
+  outline: none;
+}
+
+/* Table Styling */
+.message-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 100, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.message-table th,
+.message-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.message-table th {
+  background-color: #228b22;
+  color: white;
+  font-weight: bold;
+}
+
+.message-table tr:hover {
+  background-color: #fffbe6;
+}
+
+.message-col {
+  max-width: 300px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Footer */
+footer {
+  background-color: #006400;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-link {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .data-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-bar-container input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .message-table th,
+  .message-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
