@@ -1,113 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mang Inasal Location</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mang-Inasal Location</title>
 
-    <link rel="stylesheet" href="location.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="brand">
-          <img src="img/LOGO.png" alt="Mang Inasal Logo" class="logo" />
-          <span class="brand-name">Ihaw-Sarap, Unli-Saya</span>
-        </div>
-        <ul class="nav-link">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="feature.html">FEATURE</a></li>
-          <li><a href="product.html">PRODUCT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="customerlist.html">CUSTOMER LIST</a></li>
-          <li><a href="messages.html">MESSAGES</a></li>
-          <li><a href="location.html" class="active">LOCATION</a></li>
-          <a
-            href="order.html"
-            class="cart-link"
-            id="cart-btn"
-            aria-label="View Cart"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="44"
-              height="44"
-              viewBox="0 0 44 44"
-              fill="none"
-            >
-              <path
-                d="M31.1667 33C29.1317 33 27.5 34.6316 27.5 36.6666C27.5 37.6391 27.8863 38.5717 28.5739 39.2594C29.2616 39.947 30.1942 40.3333 31.1667 40.3333C32.1391 40.3333 33.0718 39.947 33.7594 39.2594C34.447 38.5717 34.8333 37.6391 34.8333 36.6666C34.8333 35.6942 34.447 34.7615 33.7594 34.0739C33.0718 33.3863 32.1391 33 31.1667 33ZM1.83334 3.66663V7.33329H5.5L12.1 21.2483L9.60667 25.74C9.33167 26.2533 9.16667 26.8583 9.16667 27.5C9.16667 28.4724 9.55298 29.4051 10.2406 30.0927C10.9282 30.7803 11.8609 31.1666 12.8333 31.1666H34.8333V27.5H13.6033C13.4818 27.5 13.3652 27.4517 13.2792 27.3657C13.1933 27.2798 13.145 27.1632 13.145 27.0416C13.145 26.95 13.1633 26.8766 13.2 26.8216L14.85 23.8333H28.5083C29.8833 23.8333 31.0933 23.0633 31.7167 21.945L38.28 10.0833C38.4083 9.78996 38.5 9.47829 38.5 9.16663C38.5 8.6804 38.3069 8.21408 37.963 7.87026C37.6192 7.52645 37.1529 7.33329 36.6667 7.33329H9.55167L7.82834 3.66663M12.8333 33C10.7983 33 9.16667 34.6316 9.16667 36.6666C9.16667 37.6391 9.55298 38.5717 10.2406 39.2594C10.9282 39.947 11.8609 40.3333 12.8333 40.3333C13.8058 40.3333 14.7384 39.947 15.4261 39.2594C16.1137 38.5717 16.5 37.6391 16.5 36.6666C16.5 35.6942 16.1137 34.7615 15.4261 34.0739C14.7384 33.3863 13.8058 33 12.8333 33Z"
-                fill="white"
-              />
-            </svg>
-            <span id="cart-count" class="cart-count">0</span>
-          </a>
-        </ul>
+        <link rel="stylesheet" href="location.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <img
+                        src="img/LOGO.png"
+                        alt="Mang Inasal Logo"
+                        class="logo"
+                    />
+                    <span class="brand-name">Ihaw-Sarap, Unli-Saya</span>
+                </div>
+                <ul class="nav-link">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="feature.html">FEATURE</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="customerlist.html">CUSTOMER LIST</a></li>
+                    <li><a href="messages.html">MESSAGES</a></li>
+                    <li><a href="location.html" class="active">LOCATION</a></li>
+                    <a
+                        href="order.html"
+                        class="cart-link"
+                        id="cart-btn"
+                        aria-label="View Cart"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="44"
+                            height="44"
+                            viewBox="0 0 44 44"
+                            fill="none"
+                        >
+                            <path
+                                d="M31.1667 33C29.1317 33 27.5 34.6316 27.5 36.6666C27.5 37.6391 27.8863 38.5717 28.5739 39.2594C29.2616 39.947 30.1942 40.3333 31.1667 40.3333C32.1391 40.3333 33.0718 39.947 33.7594 39.2594C34.447 38.5717 34.8333 37.6391 34.8333 36.6666C34.8333 35.6942 34.447 34.7615 33.7594 34.0739C33.0718 33.3863 32.1391 33 31.1667 33ZM1.83334 3.66663V7.33329H5.5L12.1 21.2483L9.60667 25.74C9.33167 26.2533 9.16667 26.8583 9.16667 27.5C9.16667 28.4724 9.55298 29.4051 10.2406 30.0927C10.9282 30.7803 11.8609 31.1666 12.8333 31.1666H34.8333V27.5H13.6033C13.4818 27.5 13.3652 27.4517 13.2792 27.3657C13.1933 27.2798 13.145 27.1632 13.145 27.0416C13.145 26.95 13.1633 26.8766 13.2 26.8216L14.85 23.8333H28.5083C29.8833 23.8333 31.0933 23.0633 31.7167 21.945L38.28 10.0833C38.4083 9.78996 38.5 9.47829 38.5 9.16663C38.5 8.6804 38.3069 8.21408 37.963 7.87026C37.6192 7.52645 37.1529 7.33329 36.6667 7.33329H9.55167L7.82834 3.66663M12.8333 33C10.7983 33 9.16667 34.6316 9.16667 36.6666C9.16667 37.6391 9.55298 38.5717 10.2406 39.2594C10.9282 39.947 11.8609 40.3333 12.8333 40.3333C13.8058 40.3333 14.7384 39.947 15.4261 39.2594C16.1137 38.5717 16.5 37.6391 16.5 36.6666C16.5 35.6942 16.1137 34.7615 15.4261 34.0739C14.7384 33.3863 13.8058 33 12.8333 33Z"
+                                fill="white"
+                            />
+                        </svg>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </ul>
 
-        <div class="social-icons nav-icons">
-          <a href="fb"><i class="fab fa-facebook-f"></i></a>
-          <a href="insta"><i class="fab fa-instagram"></i></a>
-          <a href="tiktok"><i class="fab fa-tiktok"></i></a>
-          <a href="twtr"><i class="fab fa-twitter"></i></a>
-          <a href="manginasal@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-      </nav>
-    </header>
+                <div class="social-icons nav-icons">
+                    <a href="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="twtr"><i class="fab fa-twitter"></i></a>
+                    <a href="manginasal@gmail.com"
+                        ><i class="fas fa-envelope"></i
+                    ></a>
+                </div>
+            </nav>
+        </header>
 
-    <section class="location" id="location">
-      <h2>Visit Us in Pampanga</h2>
-      <p>You can find Mang Inasal at Nepo Mall, Angeles City, Pampanga.</p>
+        <section class="location" id="location">
+            <h2>Visit Us in Pampanga</h2>
+            <p>
+                You can find Mang Inasal at Nepo Mall, Angeles City, Pampanga.
+            </p>
 
-      <div class="map-container">
-        <div class="map-embed">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6505196955527!2d120.58607790076579!3d15.134918511073288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f24f9fef2c6f%3A0xc8e4733acdd957e!2sMang%20Inasal%20-%20Nepo%20Mall%20Angeles!5e0!3m2!1sen!2sph!4v1760798950344!5m2!1sen!2sph"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
+            <div class="map-container">
+                <div class="map-embed">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6505196955527!2d120.58607790076579!3d15.134918511073288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f24f9fef2c6f%3A0xc8e4733acdd957e!2sMang%20Inasal%20-%20Nepo%20Mall%20Angeles!5e0!3m2!1sen!2sph!4v1760798950344!5m2!1sen!2sph"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
 
-      <div class="social-icons nav-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-      </div>
-    </section>
+            <div class="social-icons nav-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
 
-    <footer>
-      <p>&copy; 2025 Mang Inasal Fan Site. All Rights Reserved.</p>
-    </footer>
-    <script src="./js/cart.js"></script>
-    <script>
-      // Animation on navbar
-      document.body.classList.add("fade-out");
-
-      window.addEventListener("DOMContentLoaded", () => {
-        document.body.classList.remove("fade-out");
-      });
-
-      document.querySelectorAll("a[href]").forEach((link) => {
-        const isInternal = link.hostname === window.location.hostname;
-        const isAnchor = link.href.includes("#");
-
-        if (isInternal && !isAnchor) {
-          link.addEventListener("click", (e) => {
-            e.preventDefault();
+        <footer>
+            <p>&copy; 2025 Mang Inasal Fan Site. All Rights Reserved.</p>
+        </footer>
+        <script src="./js/cart.js"></script>
+        <script>
+            // Animation on navbar
             document.body.classList.add("fade-out");
-            setTimeout(() => {
-              window.location.href = link.href;
-            }, 250);
-          });
-        }
-      });
-    </script>
-  </body>
+
+            window.addEventListener("DOMContentLoaded", () => {
+                document.body.classList.remove("fade-out");
+            });
+
+            document.querySelectorAll("a[href]").forEach((link) => {
+                const isInternal = link.hostname === window.location.hostname;
+                const isAnchor = link.href.includes("#");
+
+                if (isInternal && !isAnchor) {
+                    link.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        document.body.classList.add("fade-out");
+                        setTimeout(() => {
+                            window.location.href = link.href;
+                        }, 250);
+                    });
+                }
+            });
+        </script>
+    </body>
 </html>
